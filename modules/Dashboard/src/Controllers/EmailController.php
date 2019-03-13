@@ -44,7 +44,7 @@ class EmailController extends Controller
             ), function($message)
             {
                 $message->from('deoling.email.sender@gmail.com');
-                $message->to('job@deoling.com', 'Deoling')->subject('Mail from app');
+                $message->to('kacperx95@gmail.com', 'Test')->subject('Mail from app');
             });
 
         return back()->with('success', 'Thanks for send email!');
